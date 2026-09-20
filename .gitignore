@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment (never commit real secrets)
+.env
+.env.*
+!.env.example
+
+# Build output (hosts rebuild it)
+dist/
+**/dist/
+
+# Logs (may contain emails + reset links)
+*.log
+logs/
+**/logs/
+
+# Uploads (ephemeral on hosts; use Cloudinary in production)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
